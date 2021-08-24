@@ -15,7 +15,7 @@ _**Building the Pivot Table**_
 
 Next, I utilized all of the data within the Kickstarter worksheet in a pivot table. I set the **Parent Category** and **Years** as filters, **Outcomes** as the columns, **Date Created Conversion** as the rows, and **Count of Outcomes** for the values to be displayed. When the **Date Created Conversion** field is added to the Rows area, the chart provides options for years, quarters, and month displays, but I removed the Years and Quarters options to simplify the display by month. The Years filter provides the option to adjust the display for a specific year's results if desired.
 
- ![pivot table fields](Pivot_table_fields.PNG) 
+ ![pivot table fields](Additional_Kickstarter_Images/Pivot_table_fields.PNG) 
 
 As Louise wanted to know specifically about theater campaigns, I filter the **Parent Category** to only show theater. Then I adjusted the Column Labels filter to:
 
@@ -24,7 +24,7 @@ As Louise wanted to know specifically about theater campaigns, I filter the **Pa
 
 This resulted in a table displaying the number of successful, failed, and canceled theater campaigns by month launched and the total number of each outcome overall.
 
-![pivot table theater](Pivot_table_theater.PNG)
+![pivot table theater](Additional_Kickstarter_Images/Pivot_table_theater.PNG)
 
 
 _**Visualizing in a Pivot Chart**_
@@ -32,7 +32,7 @@ _**Visualizing in a Pivot Chart**_
 With the pivot table built and filtered as desired, I used the table to create a pivot chart by selecting _PivotTable Analyze_ in Excel, selecting _PivotChart_, and selecting a Line Chart. I chose Line as it clearly displays the change of outcomes over time and we will be able to see correlate certain months with success or failure. To make the chart presentable, I selected _Hide All Field Buttons on Chart_ and added the chart title: **Theater Outcomes Based on Launch Date**.
 	
 
-![Pivot Chart theater](Theater_Outcomes_vs_Launch.png)
+![Pivot Chart theater](Resources/Theater_Outcomes_vs_Launch.png)
       
 ### Analysis of Outcomes Based on Goals
 _**COUNTIFS() Data Compilation**_
@@ -51,13 +51,13 @@ Once the number of the play campaigns by outcome and goal amount had been compil
 
 Next, to calculate the percentage of successful, failed, and canceled play campaigns, I created three additional columns for each outcome percentage and utilized a formula to divide the _Number (Outcome)_ column by the _Total Projects_ column. For example, `=B2/E2` divides the number of **Successful** plays with goals less than $1,000 by the the **Total** number of plays with the same goal range. This gave me a general number, so I formatted the cell to display as a percentage with 0 decimal places. I dragged this formula down to fill out the rest of the column and then applied the same analysis for the failed and canceled percentage columns.
 
-![Outcomes based on goals table](Outcomes_based_on_Goals.PNG)
+![Outcomes based on goals table](Additional_Kickstarter_Images/Outcomes_based_on_Goals.PNG)
 
 _**Visualizing Campaign Outcome Percentages by Goal**_
 
 To visualize this percentage data, I selected the Goal column and the three percentage columns and then selected **Insert Line Chart**. For presentation, I adjust the chart's size to make it bigger and added the chart title: **Outcomes Based on Goal**.
 
-![Outcomes based on goals chart](Outcomes_vs_Goals.png)
+![Outcomes based on goals chart](Resources/Outcomes_vs_Goals.png)
 
 ### Challenges and Difficulties Encountered
 There are several challenges that can be associated with these analyses. 
